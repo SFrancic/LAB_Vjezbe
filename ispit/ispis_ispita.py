@@ -3,3 +3,8 @@ def ispis_ispita(ispit):
 
 def get_ispit(redni_broj, ispit):
     return f"{redni_broj}. {ispit['kolegij']['ime']}"
+
+def ispis_svih_ispita(ispiti):
+    print("Popis ispita:")
+    for ispiti in ispiti:
+        ispis_ispita(ispiti)
